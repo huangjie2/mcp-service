@@ -1,0 +1,17 @@
+{
+  "github.copilot.chat.experimental.mcp": {
+    "enabled": true,
+    "servers": {
+      "test-maintenance": {
+        "command": "python",
+        "args": ["/path/to/test-mcp-service/test_mcp_server.py"],
+        "cwd": "/path/to/test-mcp-service",
+        "env": {
+          "TEST_BASE_URL": "http://aaabbbcc:8000/test",
+          "LOG_LEVEL": "INFO",
+          "PYTHONPATH": "/path/to/test-mcp-service"
+        }
+      }
+    }
+  }
+}
